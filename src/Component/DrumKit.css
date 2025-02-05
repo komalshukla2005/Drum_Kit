@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://cdn.pixabay.com/photo/2017/08/06/04/55/people-2588886_960_720.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.all-kits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    gap: 2rem;
+    padding: 20px;
+}
+
+/* ✨ Better Image Styling */
+img {
+    cursor: pointer;
+    border-radius: 15px;  
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    background-position: center;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    background-color:beige;
+    background-color: black;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* ✨ Animation When Hovering */
+img:hover {
+    transform: scale(1.1);  
+    box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* ✨ Animation When Clicked */
+.img-clicked {
+    animation: bounce 0.3s ease;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+
+h2{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
